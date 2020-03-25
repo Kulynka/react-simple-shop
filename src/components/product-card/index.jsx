@@ -15,6 +15,11 @@ import Raiting from './../Rating/index';
 function ProductCard(props){
     return (
         <div className="product-card-container">
+            <header>
+                <ul>
+                    <li><a href="/cart">Cart img</a></li>
+                </ul>
+            </header>
             {products.map(product => 
                 <Card className="card">
                     <div key={product.name}>

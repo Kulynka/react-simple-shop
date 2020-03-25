@@ -1,14 +1,25 @@
 import React from 'react';
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 import './App.css';
 // Components
 import ProductCard from './components/product-card/index';
+import Cart from './components/Cart/cart';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-        <ProductCard/>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <ProductCard/>
+        </Route>
+        <Route path="/cart">
+          <Cart/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
-
-export default App;
