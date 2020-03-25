@@ -2,9 +2,6 @@ import React from 'react';
 import './style.css';
 //Material-designe
 import Card from '@material-ui/core/Card';
-// import Rating from '@material-ui/lab/Rating';
-// import Typography from '@material-ui/core/Typography';
-// import Box from '@material-ui/core/Box';
 //Data
 import products from '../../data/data';
 // Components
@@ -27,7 +24,7 @@ function ProductCard(props){
                         <p className="product-code">Код товару: {product.productCode}</p>
                         <div>
                             <div className="product-rating">
-                                <Raiting/>
+                                <Raiting rankingName={product.productCode}/>
                             </div>
                             <div>
                                 <a href=""><Comments amount={product.amountComments}/></a>
