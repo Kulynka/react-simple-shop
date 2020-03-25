@@ -4,12 +4,29 @@ const Jobs = [
     {
         productImage: Mishok,
         productName: "Суміш для приклейки пінопласту ADEXBUD",
-        available: true
+        available: true,
+        productCode: 5644,
+        amountComments: 1,
+        price: '170 грн',
+        discount: null
     },
     {
         productImage: Mishok,
         productName: "Суміш для приклейки пінопласту ADEXBUD",
-        available: false
+        available: false,
+        productCode: 5644,
+        amountComments: 2,
+        price: '150 грн',
+        discount: 149.90
+    },
+    {
+        productImage: Mishok,
+        productName: "Суміш для приклейки пінопласту ADEXBUD",
+        available: false,
+        productCode: 5644,
+        amountComments: 5,
+        price: '190 грн',
+        discount: null
     }
 ]
 

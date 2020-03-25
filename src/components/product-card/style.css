@@ -1,12 +1,19 @@
+.product-card-container {
+    display: flex;
+}
 .card {
     min-width: 200px;
     max-width: 250px;
     min-height: 450px;
+    margin: 10px;
 }
 .card-image {
     height: 250px;
     width: 250px;
 }
 .card-product-name {
-    font-size: 17px;
+    /* font-size: 17px; */
+}
+.product-code {
+    color: #3ab8bd;
 }
