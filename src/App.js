@@ -6,8 +6,8 @@ import {
 } from 'react-router-dom';
 import './App.css';
 // Components
-import ProductCard from './components/product-card/index';
-import Cart from './components/Cart/cart';
+import ProductCard from './pages/Home';
+import Cart from './pages/Cart';
 
 export default function App() {
   return (

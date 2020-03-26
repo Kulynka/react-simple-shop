@@ -1,23 +1,24 @@
 import React from 'react';
-import './style.css';
+import './home.css';
 //Material-designe
 import Card from '@material-ui/core/Card';
 //Data
-import products from '../../data/data';
+import products from '../data/data';
 // Components
-import Available from '../available/available';
-import NotAvailable from '../not-available/not-available';
-import Comments from './../Comments/index';
-import Button from './../Button/index';
-import Price from './../Price/index';
-import Raiting from './../Rating/index';
+import Available from '../components/available/available';
+import NotAvailable from '../components/not-available/not-available';
+import Comments from '../components/Comments/index';
+import Button from '../components/Button/index';
+import Price from '../components/Price/index';
+import Raiting from '../components/Rating/index';
+import cartImg from '../img/cart.png';
 
 function ProductCard(props){
     return (
         <div className="product-card-container">
             <header>
                 <ul>
-                    <li><a href="/cart">Cart img</a></li>
+                    <li><a href="/cart"><img src={cartImg} alt=""/></a></li>
                 </ul>
             </header>
             {products.map(product => 
