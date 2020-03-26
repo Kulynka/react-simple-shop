@@ -21,16 +21,16 @@ function ProductCard(props){
                     <li><a href="/cart"><img src={cartImg} alt=""/></a></li>
                 </ul>
             </header>
-            {products.map(product => 
-                <Card className="card">
+            {products.map((product, index) => 
+                <Card className="card" key={index}>
                     <div key={product.name}>
                         <img src={product.productImage} alt='' className="card-image"/>
                         <h4 className="card-product-name">{product.productName}</h4>
-                        <p>{ product.available ? <Available/> : <NotAvailable/> }</p>
+                        <div>{ product.available ? <Available/> : <NotAvailable/> }</div>
                         <p className="product-code">Код товару: {product.productCode}</p>
                         <div>
                             <div className="product-rating">
-                                <Raiting rankingName={product.productCode}/>
+                                <Raiting rankingName={product.productName}/>
                             </div>
                             <div>
                                 <a href=""><Comments amount={product.amountComments}/></a>
